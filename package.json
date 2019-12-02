@@ -20,5 +20,10 @@
     "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "browserslist": [
+    "> 1%",
+    "not ie <= 9",
+    "last 2 versions"
+  ]
 }

@@ -21,10 +21,7 @@ gulp.task('sass', () => {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle:'compressed'}))
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
+        .pipe(autoprefixer({}))
         .pipe(concat('style.min.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./dist/css'));
