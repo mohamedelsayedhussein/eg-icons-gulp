@@ -1,0 +1,233 @@
+
+// preloading page style
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: $primaryColor;
+    z-index: 555;
+    .loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ccc;
+        font-size: 1.5rem;
+        letter-spacing: 10px;
+        @media (max-width: 575px) {
+            font-size: 1rem;
+        }
+    }
+}
+
+// global section style
+
+section {
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    width: 100%;
+}
+
+// global banner showcase
+
+section.showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-30%);
+        background: url('../img/shapes/dots.png');
+        z-index: -1;
+        width: 130px;
+        height: 267px;
+    }
+}
+
+section.home-banner.showcase:before {
+    transform: translateY(-50%);
+}
+
+// global breadcrumb guide
+
+.fixed-breadcrumb {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    left: -20px;
+    transform: rotate(-90deg);
+    color: #353535;
+    z-index: 8;
+    font-size: 1rem;
+    @media (max-width: 1330px) {
+        display: none;
+    }
+}
+.homeBreadcrumb {
+    top: 50%;
+    left: 0;
+    font-size: 1rem;
+}
+
+// global h2 title section style
+
+h2.title-section {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: $primaryColor;
+    margin-bottom: 3rem;
+    @media (max-width: 575px) {
+        font-size: 1.7rem;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 1px;
+        background: $mainColor;
+        animation: move 2s cubic-bezier(.53,.2,.54,1.33) infinite;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: calc(50% + 15px);
+        transform: translateX(-50%);
+        width: 0;
+        height: 1px;
+        background: $mainColor;
+        animation: move 2s 1s cubic-bezier(.53,.2,.54,1.33) infinite;
+    }
+    @keyframes move {
+        0%{width: 0}
+        75%{width: 100px}
+        100%{width: 0px;}
+    }
+}
+
+// section-count style
+
+.section-count {
+    position: absolute;
+    top: 4rem;
+    left: 10%;
+    font-size: 1.5rem;
+    color: $primaryColor;
+    &:after {
+        content: '';
+        width: 45px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 1rem;
+        height: 1px;
+        background: $primaryColor;
+    }
+    @media (max-width: 875px) {
+        display: none;
+    }
+}
+
+// global svg button
+
+a.global-svg {
+    display: inline-block;
+    color: $primaryColor;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    max-width: 170px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: transparent;
+    font-weight: 600;
+    transition: all 400ms linear;
+    padding-top: .1rem;
+    z-index: 2;
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        rect {
+            fill: none;
+            stroke: $mainColor;
+            stroke-width: 3;
+            stroke-dasharray: 422, 0;
+        }
+    &:hover rect {
+        stroke-dasharray: 20, 310;
+        stroke-dashoffset: 45;
+        transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+    }
+}
+
+//   button to top style
+
+.progress-btnToTop {
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	height: 46px;
+	width: 46px;
+	border-radius: 50%;
+	box-shadow: inset  0 0 0 2px rgba(255, 255, 255, .5), inset  0 0 0 2px rgba(0, 0, 0, .3);
+	z-index: 7;
+	opacity: 0;
+	visibility: hidden;
+	cursor: pointer;
+	transform: translateY(15px);
+	transition: all 200ms linear;
+	@media (max-width: 575px) {
+		bottom: 20px;
+		right: 20px;
+	}
+}
+.progress-btnToTop.active-progress {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+.progress-btnToTop::after {
+	content: '\f062';
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: 'Font Awesome 5 Free';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 18px;
+	font-display: auto;
+	line-height: 46px;
+	text-align: center;
+	color: $mainColor;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	display: block;
+	z-index: 1;
+    transition: all 200ms linear;
+}
+.progress-btnToTop svg path {
+	fill: none;
+}
+.progress-btnToTop svg.progress-circle path {
+	stroke: $mainColor;
+	stroke-width: 4;
+    transition: all 200ms linear;
+}

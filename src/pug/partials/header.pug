@@ -1,0 +1,137 @@
+header
+    .top-header
+        .container
+            .flex-items
+                .left-side
+                    .support-login
+                        a(href='https://support.icons-agency.com/login/') Online Support
+                .right-side
+                    div(class="dropdown")
+                        a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true") Country
+                            
+                        div(class="dropdown-menu")
+                            a(href="#")
+                                img(style="width: 25px;height: 25px;" src="img/flags/gb.png" alt='flag' draggable='false')
+                                | London
+                            a(href="#")
+                                img(style="width: 25px;height: 25px;" src="img/flags/eg.png" alt='flag' draggable='false')
+                                | Egypt Office
+                            a(href="#")
+                                img(style="width: 25px;height: 25px;" src="img/flags/kw.png" alt='flag' draggable='false')
+                                | Kuwait Office
+                            a(href="#")
+                                img(style="width: 25px;height: 25px;" src="img/flags/sa.png" alt='flag' draggable='false')
+                                | Saudi Arabia Office
+                    .ourDirectContact
+                        a.ourPhone(href="tel:(+2) 012002-77117")
+                            i.fas.fa-phone
+                            span.phone (+2) 012002-77117
+                        .line.mx-3 |
+                        a.ourWeb(href="mailto:Info@Icons-Agency.com")
+                            i.far.fa-envelope
+                            span.web-site Info@Icons-Agency.com
+
+    .horizontal-navbar
+        .container
+            .flex-items
+                .logo(data-aos="fade-right" data-aos-duration='500')
+                    a(href='./index.html')
+                        img(class='img-fluid' src='img/darkLogo.png' alt='icons logo' draggable='false')
+
+                .list-item
+                    a(href='index.html') Home
+                    a(href='about.html') About
+                    a(href='works.html' calss='work') Works
+                    a(href='http://v2.icons-agency.com/en-eg/simple-crm' class='crm') Simple CRM
+                    a(href='contact.html' class='contact') Contact Us
+
+                a#freeQuote.quote(href='#' data-text='Get A Free Quote') Get A Free Quote
+                    .before
+                    .after
+                .modal-quote
+                    .row.popup-content
+                        span.close ×
+                        .col-lg-6.left-col
+                            h4 Get A Free Quote
+                            .form-popup.form-group
+                                input.form-control(type='text', name='name')
+                                label Name
+                                span.help-block This Field Is Required
+                            .form-popup.form-group
+                                input.form-control(type='email', name='email')
+                                label Email
+                                span.help-block This Field Is Required
+                            .form-popup.form-group
+                                input.form-control(type='text', name='phone')
+                                label Phone
+                                span.help-block This Field Is Required
+                            .form-popup.form-group
+                                input.form-control(type='text', name='website')
+                                label Website
+                                span.help-block This Field Is Required
+                            .form-popup.form-group
+                                textarea.form-control(name='message', rows='3')
+                                label Message
+                                span.help-block This Field Is Required
+                            .btn-wrapper
+                                button.submit-form(type='submit')
+                                    a.global-svg Get A Quote
+                                        svg
+                                            rect(x="0" y="0" fill="none" width="100%" height="100%")
+
+                        .col-lg-6.right-col
+                            h4.mb-3 What Is Next?
+                            ul
+                                li An Email And Phone Call From One Of Our Representatives.
+                                li An In-person MeetingAn in-person meeting.
+                                li A Time & Cost Estimation.
+                            .directContact
+                                a.ourPhone(href="tel:(+2) 012002-77117")
+                                    i.fas.fa-phone
+                                    span.pipeline |
+                                    .block
+                                        span Give Us A Call
+                                        span.phone (+2) 012002-77117
+                                a.ourWeb(href="mailto:Info@Icons-Agency.com")
+                                    i.far.fa-envelope
+                                    span.pipeline |
+                                    .block
+                                        span Sent An Email
+                                        span.web-site Info@Icons-Agency.com
+                .togglebutton(data-aos="fade-left" data-aos-duration='500')
+                    span M
+                    span.bars
+                    span N
+                    span U
+
+    ul.menu-links.row.justify-content-center
+        li.col-md(class='d-md-none')
+            a(href='index.html') HOME
+        li.col-md(class='d-md-none')
+            a(href='about.html') ABOUT
+        li.col-md
+            span 01
+            a(href='services.html') SERVICES
+            .list-bg(style='background-image:url(img/services/services-banner.jpg)')
+        li.col-md
+            span 02
+            a(href='teams.html') OUR TEAMS
+            .list-bg(style='background-image:url(img/about/about-bg.jpg)')
+        li.col-md
+            span 03
+            a(href='careers.html') CAREERS
+            .list-bg(style='background-image:url(img/careers/careers-bg.png)')
+        li.col-md
+            span 04
+            a(href='blog.html') BLOG
+            .list-bg(style='background-image:url(img/blog/blog-bg.jpg)')
+        li.col-md(class='d-md-none')
+            a(href='works.html') WORKS
+        li.col-md(class='d-md-none')
+            a(href='http://v2.icons-agency.com/en-eg/simple-crm') SIMPLE CRM
+        li.col-md(class='d-md-none')
+            a(href='contact.html') CONTACT US
+        li.col-md(class='d-md-none')
+            a#freeQuote(href='#') GET A FREE Quote
+        li.col-md(class='d-md-none')
+            a(href='https://support.icons-agency.com/login/') ONLINE SUPPORT

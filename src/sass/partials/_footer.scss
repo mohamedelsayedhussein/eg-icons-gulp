@@ -1,0 +1,168 @@
+
+footer#footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    @media (max-width: 1200px) {
+        position: relative;
+    }
+    .top-footer {
+        padding: 4rem 2rem 0;
+    }
+    h2.title-section {
+        display: inline-block;
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: -1px;
+        margin: 0 0 1rem;
+        color: $mainColor;
+        @media (max-width: 500px) {
+            font-size: 1.3rem;
+        }
+        &:after,
+        &:before {
+            content: none;
+        }
+    }
+    .block {
+        @media (max-width: 1200px) {
+            margin-top: 2rem;
+        }
+    }
+    h5 {
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        padding-bottom: .5rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        small {
+            color: #077FFF;
+            font-weight: 600;
+        }
+    }
+    address {
+        color: #000;
+        font-weight: 600;
+    }
+    a {
+        color: #7e7777;
+    }
+    p.connect {
+        color: #077FFF !important;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .social-links {
+        li {
+            a.social-link {
+                display: block;
+                border-radius: 50% 10% 50% 50%;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                transition: all .1s linear;
+                span {
+                    vertical-align: middle;
+                }
+                &:not(.pinterest) {
+                    margin-right: .5rem;
+                }
+                &:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 2px 6px 3px rgba(0, 0, 0, .2);
+                }
+            }
+            a.facebook {
+                background: #3B5998;
+                color: #fff;
+            }
+            a.twitter {
+                background: #55ACEE;
+                color: #fff;
+            }
+            a.instagram {
+                background: #8A3AB9;
+                color: #fff;
+            }
+            a.youtube {
+                background: #FF0000;
+                color: #fff;
+            }
+            a.linkedin {
+                background: #007BB5;
+                color: #fff;
+            }
+        }
+    }
+        a.chat {
+            position: relative;
+            display: inline-block;
+            padding: .5rem .7rem .3rem;
+            margin-top: 1.5rem;
+            color: #fff;
+            background: #077FFF;
+            font-weight: 500;
+            border-radius: 10px;
+            overflow: hidden;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100px;
+                width: 50px;
+                height: 100%;
+                background: #d1d1d1;
+                opacity: .5;
+                transform: skew(-20deg);
+                transition: all .4s linear;
+            }
+            &:hover:after {
+                left: 400px;
+            }
+        }
+    .bottom-footer {
+        padding: 1rem 0;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        background: #fbfbfb;
+        .rights {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #252525;
+            font-weight: 600;
+            margin: 0;
+            padding: 0;
+            @media (max-width: 575px) {
+                font-size: .9rem;
+            }
+            @media (max-width: 400px) {
+                font-size: .7rem;
+            }
+            i {
+                margin: 0 .2rem;
+                display: inline-block;
+                vertical-align: middle;
+                color: red;
+                animation-duration: 1.8s;
+            }
+            a {
+                margin-top: -.6rem;
+                @media (max-width: 400px) {
+                    margin-top: -.2rem;
+                }
+                img {
+                    width: 50px;
+                    margin: 0 .4rem 0;
+                    display: inline-block;
+                    @media (max-width: 400px) {
+                        width: 30px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

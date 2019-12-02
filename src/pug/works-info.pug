@@ -1,0 +1,179 @@
+- var pageTitle = 'Works Info- ICONS Agency';
+doctype
+html
+    head
+        include partials/head
+        include partials/style
+    body
+
+        //- Create Preload Page
+
+        #preloader
+            .loading LOADING ...
+
+        include partials/btn-top
+
+        include partials/header
+
+        .fixed-breadcrumb
+            strong &larr; &nbsp; Our Works 
+            | — Overview
+
+        section.works-banner.showcase
+            .container
+                .inner-banner
+                    h1.display-4 Our Works
+                    p Take a journey in our portfolio and<br> get inspired by our awesome projects.
+                    a.global-svg.works-banner-btn(href="z") Let's Work Together
+                        svg
+                            rect(x="0" y="0" fill="none" width="100%" height="100%")
+        section.works-section
+            .container
+                ul#myTab.nav.nav-tabs(role='tablist')
+                    li.nav-item
+                        a#all-tab.nav-link.active(data-toggle='tab', href='#All', role='tab', aria-controls='All', aria-selected='true') All Work
+                    li.nav-item
+                        a#web-tab.nav-link(data-toggle='tab', href='#Web', role='tab', aria-controls='Web', aria-selected='false') Web Development
+                    li.nav-item
+                        a#mobile-app-tab.nav-link(data-toggle='tab', href='#Mobile-App', role='tab', aria-controls='Mobile-App', aria-selected='false') Mobile App Development
+                    li.nav-item
+                        a#design-tab.nav-link(data-toggle='tab', href='#Design', role='tab', aria-controls='Design', aria-selected='false') Motion Design / Animation
+                #myTabContent.tab-content
+                    #All.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='All-tab')
+                        #works-content.row.m-0
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557057468594248.png', alt='')
+                                    .overlay
+                                        a(href='http://v2.icons-agency.com/public/uploads/works/s_1545833435298901.jpg' data-fancybox="gallery" data-caption="Web Development") More Info
+                                        h3.text-content Real Estate
+                                        h4 Aqar Masr
+
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557057488456890.png', alt='')
+                                    .overlay
+                                        a(href='http://v2.icons-agency.com/public/uploads/works/s_155594080119346.png' data-fancybox="gallery" data-caption="Caption #2") More Info
+                                        h3.text-content Training & Consultation
+                                        h4 Aqar Masr
+
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557655842946074.png', alt='')
+                                    .overlay
+                                        a(href='http://v2.icons-agency.com/public/uploads/works/s_1554291914624558.png' data-fancybox="gallery" data-caption="Caption #03") More Info
+                                        h3.text-content Food & Beverage
+                                        h4 Aqar Masr
+
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557655874810543.png', alt='Tourism')
+                                    .overlay
+                                        a(href='http://v2.icons-agency.com/public/uploads/works/s_155594080119346.png' data-fancybox="gallery" data-caption="Caption #04") More Info
+                                        h3.text-content Interior Design
+                                        h4 Aqar Masr
+
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_155705757279171.png', alt='Tourism')
+                                    .overlay
+                                        a(href='http://v2.icons-agency.com/public/uploads/works/s_155594080119346.png' data-fancybox="gallery" data-caption="Caption #05") More Info
+                                        h3.text-content Media & Advertising
+                                        h4 Aqar Masr
+
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557057595562167.png', alt='Tourism')
+                                    .overlay
+                                        a(href='http://v2.icons-agency.com/public/uploads/works/s_155594080119346.png' data-fancybox="gallery" data-caption="Caption #06") More Info
+                                        h3.text-content IT & Software
+                                        h4 Aqar Masr
+
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557057618220836.png', alt='Tourism')
+                                    .overlay
+                                        a(href='http://v2.icons-agency.com/public/uploads/works/s_155594080119346.png' data-fancybox="gallery" data-caption="Caption #07") More Info
+                                        h3.text-content Other
+                                        h4 Aqar Masr
+
+                    #Web.tab-pane.fade(role='tabpanel', aria-labelledby='Web-tab')
+                        #works-content.row.m-0
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557057468594248.png', alt='Tourism')
+                                    .overlay
+                                        a(href='http://v2.icons-agency.com/public/uploads/works/s_155594080119346.png' data-fancybox="gallery" data-caption="Caption #08") More Info
+                                        h3.text-content Real Estate
+
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557057488456890.png', alt='Tourism')
+                                    .overlay
+                                        a(href='http://v2.icons-agency.com/public/uploads/works/s_155594080119346.png' data-fancybox="gallery" data-caption="Caption #09") More Info
+                                        h3.text-content Training & Consultation
+
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557655842946074.png', alt='Tourism')
+                                    .overlay
+                                        a(href='http://v2.icons-agency.com/public/uploads/works/s_155594080119346.png' data-fancybox="gallery" data-caption="Caption #10") More Info
+                                        h3.text-content Food & Beverage
+
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557655874810543.png', alt='Tourism')
+                                    .overlay
+                                        a(href='http://v2.icons-agency.com/public/uploads/works/s_155594080119346.png' data-fancybox="gallery" data-caption="Caption #11") More Info
+                                        h3.text-content Interior Design
+
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_155705757279171.png', alt='Tourism')
+                                    .overlay
+                                        a(href='http://v2.icons-agency.com/public/uploads/works/s_155594080119346.png' data-fancybox="gallery" data-caption="Caption #12") More Info
+                                        h3.text-content Media & Advertising
+
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557057618220836.png', alt='Tourism')
+                                    .overlay
+                                        a(href='http://v2.icons-agency.com/public/uploads/works/s_155594080119346.png' data-fancybox="gallery" data-caption="Caption #13") More Info
+                                        h3.text-content Other
+
+                    #Mobile-App.tab-pane.fade(role='tabpanel', aria-labelledby='Mobile-App-tab')
+                        #works-content.row.m-0
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557057595562167.png', alt='Tourism')
+                                    .overlay
+                                        a(href='http://v2.icons-agency.com/public/uploads/works/s_155594080119346.png' data-fancybox="gallery" data-caption="Caption #14") More Info
+                                        h3.text-content IT & Software
+
+                    #Design.tab-pane.fade(role='tabpanel', aria-labelledby='Design-tab')
+                        #works-content.row.m-0
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557057468594248.png', alt='Tourism')
+                                    .overlay
+                                        a(href='http://v2.icons-agency.com/public/uploads/works/s_155594080119346.png' data-fancybox="gallery" data-caption="Caption #15") More Info
+                                        h3.text-content Real Estate
+
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557655874810543.png', alt='Tourism')
+                                    .overlay
+                                        a(href='http://v2.icons-agency.com/public/uploads/works/s_155594080119346.png' data-fancybox="gallery" data-caption="Caption #16") More Info
+                                        h3.text-content Interior Design
+
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_155705757279171.png', alt='Tourism')
+                                    .overlay
+                                        a(href='http://v2.icons-agency.com/public/uploads/works/s_155594080119346.png' data-fancybox="gallery" data-caption="Caption #17") More Info
+                                        h3.text-content Media & Advertising
+
+
+        include partials/cta
+        include partials/footer
+        include partials/footerScripts

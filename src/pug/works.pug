@@ -1,0 +1,173 @@
+- var pageTitle = 'Works - ICONS Agency';
+doctype
+html
+    head
+        include partials/head
+        include partials/style
+    body
+
+        //- Create Preload Page
+
+        #preloader
+            .loading LOADING ...
+
+        include partials/btn-top
+
+        include partials/header
+
+        .fixed-breadcrumb
+            strong &larr; &nbsp; Our Works 
+            | — Overview
+
+        section.works-banner.showcase
+            .container
+                .inner-banner
+                    h1.display-4 Our Works
+                    p Take a journey in our portfolio and<br> get inspired by our awesome projects.
+                    a.global-svg.works-banner-btn(href="http://v2.icons-agency.com/en-eg/create-project") Let's Work Together
+                        svg
+                            rect(x="0" y="0" fill="none" width="100%" height="100%")
+        section.works-section
+            .container
+                ul#myTab.nav.nav-tabs(role='tablist')
+                    li.nav-item
+                        a#all-tab.nav-link.active(data-toggle='tab', href='#All', role='tab', aria-controls='All', aria-selected='true') All Work
+                    li.nav-item
+                        a#web-tab.nav-link(data-toggle='tab', href='#Web', role='tab', aria-controls='Web', aria-selected='false') Web Development
+                    li.nav-item
+                        a#mobile-app-tab.nav-link(data-toggle='tab', href='#Mobile-App', role='tab', aria-controls='Mobile-App', aria-selected='false') Mobile App Development
+                    li.nav-item
+                        a#design-tab.nav-link(data-toggle='tab', href='#Design', role='tab', aria-controls='Design', aria-selected='false') Motion Design / Animation
+                #myTabContent.tab-content
+                    #All.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='All-tab')
+                        #works-content.row.m-0
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557057468594248.png', alt='Tourism')
+                                    .overlay
+                                        a(href='works-info.html') Discover
+                                        h3.text-content                                                    
+                                            a(href='works-info.html') Real Estate
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557057488456890.png', alt='Tourism')
+                                    .overlay
+                                        a(href='works-info.html') Discover
+                                        h3.text-content                                                    
+                                            a(href='works-info.html') Training & Consultation
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557655842946074.png', alt='Tourism')
+                                    .overlay
+                                        a(href='works-info.html') Discover
+                                        h3.text-content                                                    
+                                            a(href='works-info.html') Food & Beverage
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557655874810543.png', alt='Tourism')
+                                    .overlay
+                                        a(href='works-info.html') Discover
+                                        h3.text-content                                                    
+                                            a(href='works-info.html') Interior Design
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_155705757279171.png', alt='Tourism')
+                                    .overlay
+                                        a(href='works-info.html') Discover
+                                        h3.text-content                                                    
+                                            a(href='works-info.html') Media & Advertising
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557057595562167.png', alt='Tourism')
+                                    .overlay
+                                        a(href='works-info.html') Discover
+                                        h3.text-content                                                    
+                                            a(href='works-info.html') IT & Software
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557057618220836.png', alt='Tourism')
+                                    .overlay
+                                        a(href='works-info.html') Discover
+                                        h3.text-content                                                    
+                                            a(href='works-info.html') Other
+                    #Web.tab-pane.fade(role='tabpanel', aria-labelledby='Web-tab')
+                        #works-content.row.m-0
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557057468594248.png', alt='Tourism')
+                                    .overlay
+                                        a(href='works-info.html') Discover
+                                        h3.text-content                                                    
+                                            a(href='works-info.html') Real Estate
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557057488456890.png', alt='Tourism')
+                                    .overlay
+                                        a(href='works-info.html') Discover
+                                        h3.text-content                                                    
+                                            a(href='works-info.html') Training & Consultation
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557655842946074.png', alt='Tourism')
+                                    .overlay
+                                        a(href='works-info.html') Discover
+                                        h3.text-content                                                    
+                                            a(href='works-info.html') Food & Beverage
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557655874810543.png', alt='Tourism')
+                                    .overlay
+                                        a(href='works-info.html') Discover
+                                        h3.text-content                                                    
+                                            a(href='works-info.html') Interior Design
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_155705757279171.png', alt='Tourism')
+                                    .overlay
+                                        a(href='works-info.html') Discover
+                                        h3.text-content                                                    
+                                            a(href='works-info.html') Media & Advertising
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557057618220836.png', alt='Tourism')
+                                    .overlay
+                                        a(href='works-info.html') Discover
+                                        h3.text-content                                                    
+                                            a(href='works-info.html') Other
+                    #Mobile-App.tab-pane.fade(role='tabpanel', aria-labelledby='Mobile-App-tab')
+                        #works-content.row.m-0
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557057595562167.png', alt='Tourism')
+                                    .overlay
+                                        a(href='works-info.html') Discover
+                                        h3.text-content                                                   
+                                            a(href='works-info.html') IT & Software
+                    #Design.tab-pane.fade(role='tabpanel', aria-labelledby='Design-tab')
+                        #works-content.row.m-0
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557057468594248.png', alt='Tourism')
+                                    .overlay
+                                        a(href='works-info.html') Discover
+                                        h3.text-content                                                    
+                                            a(href='works-info.html') Real Estate
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_1557655874810543.png', alt='Tourism')
+                                    .overlay
+                                        a(href='works-info.html') Discover
+                                        h3.text-content                                                    
+                                            a(href='works-info.html') Interior Design
+                            .grid-item.col-lg-4.col-md-6.p-0
+                                .img_container
+                                    img.img-fluid.works-img(src='http://v2.icons-agency.com/public/uploads/works_categories/s_155705757279171.png', alt='Tourism')
+                                    .overlay
+                                        a(href='works-info.html') Discover
+                                        h3.text-content                                                    
+                                            a(href='works-info.html') Media & Advertising
+
+
+        include partials/cta
+        include partials/footer
+        include partials/footerScripts

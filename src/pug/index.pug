@@ -1,0 +1,172 @@
+- var PageTitle = 'Home - ICONS Agency';
+doctype
+html
+    head
+        include partials/head
+        include partials/style
+    body
+
+        //- Create Preload Page
+
+        #preloader
+            .loading LOADING ...
+
+        include partials/btn-top
+
+        include partials/header
+
+        .fixed-breadcrumb.homeBreadcrumb
+            strong &larr; &nbsp; Home 
+            | — Overview
+
+        //- banner section start
+
+        section.home-banner.showcase
+            .container
+                .row.align-items-center.banner-zone(data-parallax='{"y": -300}')
+                    .col-lg-6
+                        .hero-text
+                            h1(class='main-title')
+                                span Sympol Of Creativity
+                            p
+                                span If you want to grow your business online and generate more sales, let us help you with our great services!
+                            a(href="http://v2.icons-agency.com/en-eg/create-project" class="global-svg" data-aos='zoom-in' data-aos-offset='0' data-aos-delay='2100') Start A Project
+                                svg
+                                    rect(x="0" y="0" fill="none" width="100%" height="100%")
+                    .col-lg-6.ideas
+                        .before(data-aos='zoom-in-up' data-aos-duration='1000' data-aos-offset='0')
+                        h2(data-aos='zoom-in' data-aos-duration='1000' data-aos-delay='300' data-aos-offset='0') <span>We</span> <br>Turn Ideas Into
+                            .box
+                                span.side1 Action
+                                span.side2 Profit
+                                span.side3 Business
+                                span.side4 &#9787;
+                        .after(data-aos='zoom-in-down' data-aos-duration='1000' data-aos-offset='0')
+        .scroll-btn Scroll down
+            .arrow-down-wrap
+                .arrow-down
+        .icon-shape.red(data-parallax='{"x":-250, "y":200}')
+            span
+        .icon-shape.purple(data-parallax='{"x":-350}')
+            span
+        .icon-shape.blue(data-parallax='{"x":-150}')
+            span
+
+        //- start services section
+
+        section.services
+            .section-count(data-aos='zoom-in')
+                span 01
+            h2.title-section(data-aos='zoom-in') Services We Provide
+            .container
+                .flex-items(data-parallax='{"y": 40}')
+                    .service(data-aos='fade-left')
+                        .icon
+                            img(src='img/services/web.png' alt='services image' draggable='false')
+                        h3 Web Development
+                        p We guarantee you a smart online presence by building user-friendly websites. whatever the website you desire we can make it, as we build various types of websites that will totally...
+                    .service(data-aos='fade-up')
+                        .icon
+                            img(src='img/services/mobile.png' alt='services image' draggable='false')
+                        h3 Mobile App Development
+                        p In an era full of smartphones and tablets, reach your customers on their most usable devices by implementing a mobile app for your business. -	IOS App Development -	Android...
+                    .service(data-aos='fade-right')
+                        .icon
+                            img(src='img/services/design.png' alt='services image' draggable='false')
+                        h3 Motion Design / Animation
+                        p People engage more with visuals. Thus, we in ICONS create interactive videos that can support your brand identity. Also, our storyboarding delivers the message clearly.
+            a.global-svg(href="services.html") More Services
+                svg
+                    rect(x="0" y="0" fill="none" width="100%" height="100%")
+
+        //- customers section start
+
+        section.our-portfolio
+            .section-count(data-aos='zoom-in')
+                span 02
+            h2.title-section(data-aos='zoom-in') Our Works
+            .wrapper
+                a(href='#' data-aos='fade-right' data-aos-delay='400' data-aos-duration='700' data-aos-offset='0').box.snake
+                    img(src='img/work/work-04.png', alt='works image', draggable='false')
+                    .overlay
+                        h3.title-tag Addarny Campaign
+                        p Motion Design / Animation
+                a(href='#' data-aos='fade-right' data-aos-duration='700' data-aos-offset='0').box.snake
+                    img(src='img/work/work-02.png', alt='works image', draggable='false')
+                    .overlay
+                        h3.title-tag Eslah
+                        p Graphic Design
+                a(href='#' data-aos='fade-left' data-aos-duration='700' data-aos-offset='0').box.snake
+                    img(src='img/work/work-03.png', alt='works image', draggable='false')
+                    .overlay
+                        h3.title-tag Sultan's Suites
+                        p Web Development
+                a(href='#' data-aos='fade-left' data-aos-delay='400' data-aos-duration='700' data-aos-offset='0').box.snake
+                    img(src='img/work/work-01.png', alt='works image' draggable='false')
+                    .overlay
+                        h3.title-tag Meamar El Mansour
+                        p Graphic Design
+            a.global-svg(href="works.html") See All Works
+                svg
+                    rect(x="0" y="0" fill="none" width="100%" height="100%")
+
+        //- crm section start
+
+        section.simple-crm
+            .section-count(data-aos='zoom-in')
+                span 03
+            ul.shapes
+                img(src='img/dots.png' alt='shape' draggable='false')
+                li(class='red-circle' data-parallax='{"x":250, "y": -20,"rotateY":1000}')
+                    span
+                li(class='circle' data-parallax='{"x": -320, "y": 150,"rotateY":1000}')
+                    span
+                li(class='smcircle' data-parallax='{"x": 320, "y": -120}')
+                    span
+                li(class='red-circle-2' data-parallax='{"x":-450, "y": -100}')
+                    span
+                li(class='purple-circle' data-parallax='{"x":-350, "y": -100}')
+                    span
+            h2.title-section(data-aos='zoom-in' data-aos-duration='700')  Simple CRM
+            .container
+                .row.align-items-lg-start.align-items-md-center
+                    .col-lg-6.crm-details(data-aos='fade-right')
+                        p SIMPLE is a generic customer relation management software that can remove the burden of your work processes by simplifying the daily tasks and totally digitizing your business workflow.
+                        p Whatever your industry is, SIMPLE will help you eliminate many business procedures and organize all the leads, contacts, customers and accounts in one place.
+                        p SIMPLE CRM is powered by ICONS in 2018.</p>
+                        a.global-svg(href="http://v2.icons-agency.com/simple-crm") know more about Simple CRM
+                            svg
+                                rect(x="0" y="0" fill="none" width="100%" height="100%")
+
+                    .col-lg-6.crm-img(data-aos='fade-left' data-aos-duration='700')
+                        img.img-fluid(src="img/crm/lapTop.png" alt="laptop" draggable='false')
+
+        //- hiring section start
+        
+        section.hiring
+            .section-count(data-aos='zoom-in')
+                span 04
+            ul.shapes
+                img(src='img/dots.png' alt='shape' draggable='false')
+                li(class='red-circle' data-parallax='{"x":-250, "y": -100}')
+                    span
+                li(class='purple-circle' data-parallax='{"x": 320, "y": -150}')
+                    span
+                li(class='circle' data-parallax='{"x": -220, "y": 150}')
+                    span
+                li(class='smcircle' data-parallax='{"x": -320, "y": -120}')
+                    span
+                li(class='white-circle' data-parallax='{"x": 120, "y": 80}')
+                    span
+            .container
+                .our-careers
+                    h2.title-section.text-center(data-aos='zoom-in' data-aos-duration='700') Join Our Team
+                    p(data-aos='flip-up' data-aos-delay='300' data-aos-offset='50' data-aos-duration='700') We build teams of talented people who balance idealism and pragmatism,<br>striving for outstanding results that are commercially viable.
+                    a.global-svg(href="careers.html" data-aos='flip-up' data-aos-duration='700' data-aos-delay='400' data-aos-offset='50') We're Hiring
+                        svg
+                            rect(x="0" y="0" fill="none" width="100%" height="100%")
+
+        
+        include partials/footer
+        include partials/footerScripts
+        

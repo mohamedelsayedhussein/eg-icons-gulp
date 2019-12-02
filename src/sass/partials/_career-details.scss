@@ -1,0 +1,175 @@
+
+
+section.careers-details-banner {
+    background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .8)), url('../img/careers/careers-bg.jpg') center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 3rem;
+    height: 70vh;
+    @media (max-width: 575px) {
+        text-align: center;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(#fff, transparent);
+    }
+    h1 {
+        color: $primaryColor;
+        z-index: 2;
+        margin: 0;
+        @media (max-width: 450px) {
+            font-size: 1.7rem;
+            font-weight: 500;
+        }
+    }
+    p {
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 0;
+        margin-top: -.8rem;
+        margin-left: .3rem;
+        letter-spacing: 3px;
+        @media (max-width: 575px) {
+            margin-top: 0;
+        }
+    }
+}
+
+section.careers-details-section {
+    padding: 4rem 0;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    h3, h4 {
+        display: inline-block;
+        padding-bottom: .2rem;
+        border-bottom: 2px solid $mainColor;
+        margin-bottom: 2rem;
+        @media (max-width: 450px) {
+            font-size: 1.2rem;
+        }
+    }
+    p {
+        font-weight: 500;
+        color: #888;
+    }
+    .apply {
+        margin-top: 2rem;
+        form {
+            .form-group {
+                span.help-block {
+                    display: none;
+                    font-size: .9rem;
+                }
+            }
+            & .has-error input {
+                border-color: #dc3545 !important;
+            }
+            & .has-error .help-block {
+                color: #dc3545 !important;
+            }
+            & .has-error label {
+                color: #dc3545 !important;
+            }
+            & .has-success input {
+                border-color: #28a745 !important;
+            }
+            & .has-success .help-block {
+                color: #28a745 !important;
+            }
+            & .has-success label {
+                color: #28a745 !important;
+            }
+            .info {
+                position: relative;
+                input.form-control {
+                    display: block;
+                    background: none;
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                    border-radius: 0 !important;
+                    border-bottom: 1px solid rgba(0, 0, 0, .2);
+                    &:focus + label,
+                    &.valid + label {
+                        left: 40px;
+                        opacity: 0;
+                    }
+                    @media (max-width: 767px) {
+                        margin-bottom: 1.5rem;
+                    }
+                }
+                label {
+                    position: absolute;
+                    top: 0;
+                    left: 20px;
+                    font-size: .9rem;
+                    font-weight: 500;
+                    pointer-events: none;
+                    transition: all .3s linear;
+                }
+            }
+            .upload {
+                display: inline-block;
+                margin: 2rem 0;
+                .custom-file {
+                    position: relative;
+                    input[type='file'] {
+                        display: none;
+                    }
+                    label {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: $mainColor;
+                        border-radius: 8px;
+                        color: #fff;
+                        display: inline-block;
+                        padding: .2rem 2rem;
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        cursor: pointer;
+                        border: 2px solid transparent;
+                        transition: all .2s linear;
+                        &:hover {
+                            background: #fff;
+                            border: 2px solid $mainColor;
+                            color: $mainColor;
+                        }
+                    }
+                }
+                span.help-block {
+                    margin-top: 3rem;
+                }
+                p {
+                    color: #252525;
+                    margin-top: .5rem;
+                }
+            }
+            .submit {
+                input[type='submit'] {
+                    background: $mainColor;
+                    border-radius: 8px;
+                    color: #fff;
+                    display: inline-block;
+                    border: none;
+                    outline: none;
+                    padding: .2rem 2rem;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    border: 2px solid transparent;
+                    transition: all .2s linear;
+                    &:hover {
+                        background: #fff;
+                        border: 2px solid $mainColor;
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}

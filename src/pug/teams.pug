@@ -1,0 +1,73 @@
+- var pageTitle = 'Our Teams - ICONS Agency';
+doctype
+html
+    head
+        include partials/head
+        include partials/style
+    body
+
+        //- Create Preload Page
+
+        #preloader
+            .loading LOADING ...
+
+        include partials/btn-top
+
+        include partials/header
+
+        .fixed-breadcrumb
+            strong &larr; &nbsp; Our Teams 
+            | — Overview
+            
+        section.teams-banner.showcase
+            .container
+                .inner-banner
+                    h1.display-4 Our Teams
+                    p Nice to meet you
+
+        section.teams-section
+            .container
+                h2.title-section.text-center Our Teams
+                .flex-items
+                    .box                        
+                        .face
+                            img(src="img/teams/01.png", alt="team image" draggable='false' class='img-fluid')
+                        .overlay
+                            h4.name John Doe
+                            h5.title Team Leader
+                    .box
+                        .face
+                            img(src="img/teams/02.png", alt="team image" draggable='false' class='img-fluid')
+                        .overlay
+                            h4.name John Doe
+                            h5.title Team Leader
+                    .box
+                        .face
+                            img(src="img/teams/03.png", alt="team image" draggable='false' class='img-fluid')
+                        .overlay
+                            h4.name John Doe
+                            h5.title Team Leader
+                    .box
+                        .face
+                            img(src="img/teams/04.png", alt="team image" draggable='false' class='img-fluid')
+                        .overlay
+                            h4.name John Doe
+                            h5.title Team Leader
+                    .box
+                        .face
+                            img(src="img/teams/05.png", alt="team image" draggable='false' class='img-fluid')
+                        .overlay
+                            h4.name John Doe
+                            h5.title Team Leader
+                    .box
+                        .face
+                            img(src="img/teams/06.png", alt="team image" draggable='false' class='img-fluid')
+                        .overlay
+                            h4.name John Doe
+                            h5.title Team Leader
+
+
+
+
+        include partials/footer
+        include partials/footerScripts

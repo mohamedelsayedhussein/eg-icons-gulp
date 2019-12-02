@@ -1,0 +1,98 @@
+- var PageTitle = 'Our Servives - ICONS Agency';
+doctype
+html
+    head
+        include partials/head
+        include partials/style
+    body
+
+        //- Create Preload Page
+
+        #preloader
+            .loading LOADING ...
+
+        include partials/btn-top
+
+        include partials/header
+
+
+        .fixed-breadcrumb
+            strong &larr; &nbsp; Our Services 
+            | — Overview
+            
+        section.services-banner.showcase
+            .container
+                .inner-banner
+                    h1.display-4 Our Services
+                    p Boost your online business with our outstanding services.
+
+        section.services-section
+            .container
+                h2.title-section.text-center What We Do !
+                q.d-block.text-center Your digital gate to Simply Push your business ahead
+
+                .row.mt-5(data-aos='zoom-in')
+                    .col-lg-8.relativeBox
+                        .slider-for
+                            .item
+                                img(src='img/services/slide01.png' class='img-fluid' alt='slide image' draggable='false')
+                                .caption
+                                    h3 Web Development
+                            .item
+                                img(src='img/services/slide02.png' class='img-fluid' alt='slide image' draggable='false')
+                                .caption
+                                    h3.title Mobile App Development
+                            .item
+                                img(src='img/services/slide03.png' class='img-fluid' alt='slide image' draggable='false')
+                                .caption
+                                    h3.title Motion Design / Animation
+                            .item
+                                img(src='img/services/slide04.png' class='img-fluid' alt='slide image' draggable='false')
+                                .caption
+                                    h3.title Graphic Design
+                            .item
+                                img(src='img/services/slide05.png' class='img-fluid' alt='slide image' draggable='false')
+                                .caption
+                                    h3.title Business Consultation
+                            .item
+                                img(src='img/services/slide06.png' class='img-fluid' alt='slide image' draggable='false')
+                                .caption
+                                    h3.title Event Management
+                        .controllers
+                            span.PrevArrow
+                            span |
+                            span.NextArrow
+                    .col-lg-4.align-self-center
+                        .slider-nav
+                            .text
+                                p We guarantee you a smart online presence by building user-friendly websites. whatever the website you desire we can make it, as we build various types of websites that will totally meet your need.
+                                ul
+                                    li - Custom corporate websites
+                                    li - E-commerce websites
+                                    li - Web applications
+                                    li - CMS (WordPress, Magento, Drupal, etc)
+                            .text
+                                p In an era full of smartphones and tablets, reach your customers on their most usable devices by implementing a mobile app for your business.
+                                ul
+                                    li - IOS App Development
+                                    li - Android App Development
+                            .text
+                                p People engage more with visuals. Thus, we in ICONS create interactive videos that can support your brand identity. Also, our storyboarding delivers the message clearly.
+                            .text.mx-3
+                                p One of the most important aspects of corporate identity is how people remember it. That’s why, we visualize a simple, memorable corporate identity that speaks of your business in a creative way.
+                                ul
+                                    li  - Corporate Identity & Branding.
+                                    li  - Social Media Design.
+                                    li  - Printings Management.
+                                    li  - Outdoor Advertising.
+                            .text
+                                p Whenever help is needed, ICONS has got your back. Our analysts and consultants have years of extensive experience in business. So, we help your organization in increasing efficiency by reducing the bottlenecks that your business faces periodically.
+                            .text
+                                p Organize your events flawlessly is what ICONS is here to do. When it comes to event coverage we prepare the sound, light, and audiovisual systems, provide branding and animation graphics and manage the webcast to post-event coverage.
+
+
+
+        include partials/cta
+        include partials/footer
+        include partials/footerScripts
+        

@@ -1,0 +1,50 @@
+- var PageTitle = 'About Us - ICONS Agency';
+doctype
+html
+    head
+        include partials/head
+        include partials/style
+    body
+
+        //- Create Preload Page
+
+        #preloader
+            .loading LOADING ...
+
+        include partials/btn-top
+
+        include partials/header
+
+        .fixed-breadcrumb
+            strong &larr; &nbsp; About Us
+            | — Overview
+
+        section.about-banner.showcase
+            .container
+                .inner-banner
+                    h1.display-4 About Us
+                    p When it comes to creativity, ICONS pull it off!
+                    a.global-svg.works-banner-btn(href="http://v2.icons-agency.com/en-eg/create-project") Let's Work Together
+                        svg
+                            rect(x="0" y="0" fill="none" width="100%" height="100%")
+
+        section.about-section
+            .container
+                .row.align-items-center
+                    .col-lg-6
+                        .text
+                            p(data-aos='fade-right' data-aos-delay='0') - If you’re here to read an ordinary content that describes how professional and clever our team is, you’re in the wrong place and we think that you need to adopt a different opinion regarding our brilliant iConiANs’ minds. You will test how different, clever, and distinct our smart skillful team is.
+                            p(data-aos='fade-right' data-aos-delay='100') - As by reading our clients’ mind, we get your thoughts backward and forward. Thus, our team players help you achieve more than expected.
+                            p(data-aos='fade-right' data-aos-delay='200') - ICONS is based in the United Kingdom, was founded in 2008 offering all web development and Software Solutions.
+                            p(data-aos='fade-right' data-aos-delay='300') - We keen on pushing our entity up through building a bridge of trust with our magnificent customers and providing high-quality services.
+                    .col-lg-6
+                        .bg
+                            img(src="img/about/about-img.png", alt="about us image" draggable='false' data-aos='zoom-in')
+
+
+
+
+
+        include partials/cta
+        include partials/footer
+        include partials/footerScripts

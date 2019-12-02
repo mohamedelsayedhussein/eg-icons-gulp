@@ -1,0 +1,62 @@
+- var PageTitle = 'Careers - ICONS Agency';
+doctype
+html
+    head
+        include partials/head
+        include partials/style
+    body
+
+        //- Create Preload Page
+
+        #preloader
+            .loading LOADING ...
+
+        include partials/btn-top
+
+        include partials/header
+
+        .fixed-breadcrumb
+            strong &larr; &nbsp; Our Careers 
+            | — Overview
+            
+        section.careers-details-banner.showcase
+            .container
+                .inner-banner
+                    h1.display-4 Web Designer
+                    p Join Our Team
+
+        section.careers-details-section
+            .container
+                h3 Job Description
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, deserunt magnam adipisci debitis iste culpa cupiditate numquam expedita blanditiis, nam exercitationem, dolor modi fugiat illo accusamus neque ea voluptates nisi.
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, deserunt magnam adipisci debitis iste culpa cupiditate numquam expedita blanditiis, nam exercitationem, dolor modi fugiat illo accusamus neque ea voluptates nisi.
+                hr
+                .apply
+                    h4 Personal Information
+                    form.row.m-0(action="")
+                        .col-md-4
+                            .info.form-group
+                                input.form-control.w-100(type="text" name='name')
+                                label Name
+                                span.help-block This Field Is Required
+                        .col-md-4
+                            .info.form-group
+                                input.form-control.w-100(type="email" name='email')
+                                label Email
+                                span.help-block This Field Is Required
+                        .col-md-4
+                            .info.form-group
+                                input.form-control.w-100(type="text" name='phone')
+                                label Phone
+                                span.help-block This Field Is Required
+                        .col-12.upload
+                            .custom-file.form-group
+                                label(for='file') Upload Resume
+                                input(type="file" id='file' name='file')
+                                span.help-block This Field Is Required
+                            p Acceptable types of files: pdf (Maximum file size is 2 MB)
+                        .col-12.submit
+                            input(type="submit" value='Apply')
+        include partials/footer
+        include partials/footerScripts
+        
